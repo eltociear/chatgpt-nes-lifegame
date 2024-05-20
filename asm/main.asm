@@ -7,10 +7,10 @@
 .byte $00                  ; 1 byte: PRG-RAMサイズ
 .byte $00                  ; 1 byte: フラグ9
 .byte $00                  ; 1 byte: フラグ10
-.byte $00, $00, $00, $00 ; 4 bytes: パディング
+.byte $00, $00, $00, $00, $00, $00 ; 6 bytes: パディング
 
 .segment "STARTUP"
-.org $C000
+.org $8000
 .include "nes.inc"
 
 .import InitGrid
