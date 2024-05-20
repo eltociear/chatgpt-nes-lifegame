@@ -10,7 +10,7 @@
 .byte $00, $00, $00, $00 ; 4 bytes: パディング
 
 .segment "STARTUP"
-.org $8000
+.org $C000
 .include "nes.inc"
 
 .import InitGrid
